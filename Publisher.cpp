@@ -155,7 +155,8 @@ ACE_TMAIN(int argc, ACE_TCHAR *argv[])
     message.imageArray[0] = 1;
     message.imageArray[1024*1024-1] = 1;
 
-    for (int i = 0; i < 100; ++i) {
+    //for (int i = 0; i < 100; ++i) {
+    while(true) {
       DDS::ReturnCode_t error = message_writer->write(message, DDS::HANDLE_NIL);
       ++message.count;
       ++message.subject_id;
