@@ -89,8 +89,8 @@ ACE_TMAIN(int argc, ACE_TCHAR *argv[])
     // Create DataReader
     DDS::DataReaderListener_var listener(new DataReaderListenerImpl);
 
-    //DDS::DataReaderQos reader_qos;
-    //subscriber->get_default_datareader_qos(reader_qos);
+    // DDS::DataReaderQos reader_qos;
+    // subscriber->get_default_datareader_qos(reader_qos);
     //reader_qos.reliability.kind = DDS::RELIABLE_RELIABILITY_QOS;
 
     DDS::DataReader_var reader =

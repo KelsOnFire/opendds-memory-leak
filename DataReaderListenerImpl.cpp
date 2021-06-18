@@ -72,8 +72,8 @@ DataReaderListenerImpl::on_data_available(DDS::DataReader_ptr reader)
                 << "         text        = " << message.text.in()    << std::endl
                 << "     image seq[0]    = " << std::to_string(message.imageSequence[0]) << std::endl
                 << "     image seq[1]    = " << std::to_string(message.imageSequence[1]) << std::endl
-                << "     image seq[end-1]= " << std::to_string(message.imageSequence[10-2]) << std::endl
-                << "     image seq[end]  = " << std::to_string(message.imageSequence[10-1]) << std::endl
+                << "     image seq[end-1]= " << std::to_string(message.imageSequence[1024*1024-2]) << std::endl
+                << "     image seq[end]  = " << std::to_string(message.imageSequence[1024*1024-1]) << std::endl
                 << "     image array[0]  = " << std::to_string(message.imageArray[0]) << std::endl
                 << "     image array[1]  = " << std::to_string(message.imageArray[1]) << std::endl
                 << "     image array[end]= " << std::to_string(message.imageArray[1024*1024-2]) << std::endl
